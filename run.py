@@ -1,4 +1,4 @@
-from characters import Character
+from characters import characters
 from items import Item
 
 def main():
@@ -7,7 +7,7 @@ def main():
     """
     print("This code runs when the script is executed directly.")\
     
-    jonathan = Character('Jonathan')
+    jonathan = characters('Jonathan')
     beer = Item('beer', 'gives hp')
     jonathan.add_item(beer)
 
