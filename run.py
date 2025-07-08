@@ -7,9 +7,19 @@ def main():
     """
     print("This code runs when the script is executed directly.")\
     
-    jonathan = characters('Jonathan')
+    
     beer = Item('beer', 'gives hp')
-    jonathan.add_item(beer)
+
+    character_name = input('Please choose your character name ')
+    character_name = characters(character_name)
+    
+    print(f"once supon a time, a dude named {character_name}")
+
+
+
+    character_name.add_item(beer)
+    character_name.get_damage(50)
+    beer.use(character_name)
 
 if __name__ == "__main__":
     main()
